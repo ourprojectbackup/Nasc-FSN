@@ -17,7 +17,7 @@ const AboutIns = () => {
 
                             <div className="text-neutral-950 text-center tracking-tight flex items-center ">
                                 <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                <p> {AboutTheInstitution[0]}</p>
+                                <p className="text-justify">{AboutTheInstitution[0]}</p>
                             </div>
                         </motion.div>
 
@@ -25,7 +25,7 @@ const AboutIns = () => {
 
                             <div className="text-neutral-950 text-center tracking-tight flex items-center ">
                                 <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                <p> {AboutTheInstitution[1]}</p>
+                                <p className="text-justify"> {AboutTheInstitution[1]}</p>
                             </div>
                         </motion.div>
 
@@ -37,7 +37,7 @@ const AboutIns = () => {
                             {AboutTheInstitution.slice(2).map((data, index) => (
                                 <div key={index} className="text-neutral-950 text-center tracking-tight flex items-center ">
                                     <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                    <p> {data}</p>
+                                    <p className="text-justify"> {data}</p>
                                 </div>
                             ))}
                         </motion.div>

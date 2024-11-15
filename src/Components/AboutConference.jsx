@@ -17,7 +17,7 @@ const AboutConference = () => {
 
                                 <motion.div  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }} key={index} className="text-neutral-950 text-center tracking-tight flex items-center ">
                                     <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                    <p> {data}</p>
+                                    <p className="text-justify"> {data}</p>
                                 </motion.div>
                             </div>
                         ))}

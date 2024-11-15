@@ -17,7 +17,7 @@ const AboutSoLS = () => {
 
                                 <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex items-center ">
                                     <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                    <p> {AboutSoLSData[0]}</p>
+                                    <p className="text-justify"> {AboutSoLSData[0]}</p>
                                 </motion.div>
                             </div>
 
@@ -25,7 +25,7 @@ const AboutSoLS = () => {
 
                                 <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex items-center ">
                                     <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                    <p> {AboutSoLSData[0]}</p>
+                                    <p className="text-justify"> {AboutSoLSData[0]}</p>
                                 </motion.div>
                             </div>
                   
@@ -37,7 +37,7 @@ const AboutSoLS = () => {
                             {AboutSoLSData.slice(2).map((data, index) => (
                                 <div key={index} className="text-neutral-950 text-center tracking-tight flex items-center ">
                                     <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
-                                    <p> {data}</p>
+                                    <p className="text-justify"> {data}</p>
                                 </div>
                             ))}
                         </motion.div>
