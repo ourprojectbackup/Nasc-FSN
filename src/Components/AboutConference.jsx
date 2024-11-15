@@ -36,13 +36,12 @@ const AboutConference = () => {
                 ))}
             </div>
 
-            <motion.h2  className="text-start text-3xl font-semibold underline mx-40 pt-20">Themes</motion.h2>
+            <motion.h2 initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}  className="text-start text-3xl font-semibold underline mx-40 pt-20">Themes</motion.h2>
             <div className='mx-40 pl-11'>
                 {Themes.map((theme, index) => (
-                    <motion.div   key={index} className='my-5 flex'>
-                        <motion.p initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }} className='leading-tight mr-1'> <span className='font-bold'>{index + 1}.    </span></motion.p>
-                        <motion.p initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }} className='leading-tight'> <span className='font-bold'>{theme     }</span></motion.p>
-                    </motion.div>
+                    <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}  key={index} className='my-5 flex'>
+                        <motion.p  className='leading-tight mr-1'> <span className='font-bold'>{index + 1}.    </span>{theme     }</motion.p>
+                        </motion.div>
                 ))}
             </div>   
 
