@@ -3,6 +3,7 @@ import { AboutTheInstitution } from '../assets/Data'
 import { VscDebugBreakpointData } from 'react-icons/vsc'
 import { motion } from "framer-motion";
 import TypingText from './TypingText';
+import { MdDoubleArrow } from 'react-icons/md';
 const AboutIns = () => {
     return (
         <div className="border-b border-neutral-900 pb-20 mt-5 my-10 pt-7" >
@@ -15,16 +16,17 @@ const AboutIns = () => {
 
                         <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }} className='flex'>
 
-                            <div className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                            <div className="text-neutral-950 text-center tracking-tight flex  ">
+                                <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
+                               
                                 <p className="text-justify">{AboutTheInstitution[0]}</p>
                             </div>
                         </motion.div>
 
                         <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }} className='flex'>
 
-                            <div className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                            <div className="text-neutral-950 text-center tracking-tight flex ">
+                                <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
                                 <p className="text-justify"> {AboutTheInstitution[1]}</p>
                             </div>
                         </motion.div>
@@ -35,8 +37,8 @@ const AboutIns = () => {
                     {AboutTheInstitution.length > 2 && (
                         <motion.div  initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }} className="grid grid-cols-1 place-items-center mt-8 mx-40 px-40">
                             {AboutTheInstitution.slice(2).map((data, index) => (
-                                <div key={index} className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                    <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                                <div key={index} className="text-neutral-950 text-center tracking-tight flex  ">
+                                    <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
                                     <p className="text-justify"> {data}</p>
                                 </div>
                             ))}

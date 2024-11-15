@@ -4,6 +4,8 @@ import React from 'react'
 import { AboutSoLSData } from '../assets/Data'
 import { VscDebugBreakpointData } from 'react-icons/vsc'
 
+import { MdDoubleArrow } from 'react-icons/md';
+
 const AboutSoLS = () => {
     return (
         <div className="border-b border-neutral-900 pb-20 mt-5 my-10 pt-7">
@@ -15,16 +17,16 @@ const AboutSoLS = () => {
                        
                             <div className='flex'>
 
-                                <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                    <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                                <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex  ">
+                                    <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
                                     <p className="text-justify"> {AboutSoLSData[0]}</p>
                                 </motion.div>
                             </div>
 
                              <div className='flex'>
 
-                                <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                    <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                                <motion.div initial={{ x: 100, opacity: 0 }} whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}     className="text-neutral-950 text-center tracking-tight flex  ">
+                                    <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
                                     <p className="text-justify"> {AboutSoLSData[0]}</p>
                                 </motion.div>
                             </div>
@@ -35,8 +37,8 @@ const AboutSoLS = () => {
                     {AboutSoLSData.length > 2 && (
                         <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }} className="grid grid-cols-1 place-items-center mt-8 mx-40 px-40">
                             {AboutSoLSData.slice(2).map((data, index) => (
-                                <div key={index} className="text-neutral-950 text-center tracking-tight flex items-center ">
-                                    <VscDebugBreakpointData size={30} className="flex-shrink-0 mr-2" />
+                                <div key={index} className="text-neutral-950 text-center tracking-tight flex  ">
+                                    <MdDoubleArrow size={30} className="flex-shrink-0 mr-2" />
                                     <p className="text-justify"> {data}</p>
                                 </div>
                             ))}
